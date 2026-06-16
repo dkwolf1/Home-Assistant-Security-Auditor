@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Expanded the AppArmor profile for the Home Assistant base image s6-overlay init path.
+
 ## 0.1.1
 
 - Fixed AppArmor startup permission for the Home Assistant base image init process.
