@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Removed the custom AppArmor profile so Supervisor can use the default Home Assistant confinement profile.
+
 ## 0.1.2
 
 - Expanded the AppArmor profile for the Home Assistant base image s6-overlay init path.
