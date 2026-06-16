@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Disabled Supervisor's init wrapper for the plain Alpine single-process runtime.
+
 ## 0.1.4
 
 - Switched to a plain Alpine runtime to avoid s6-overlay startup permission issues on `/init`.
