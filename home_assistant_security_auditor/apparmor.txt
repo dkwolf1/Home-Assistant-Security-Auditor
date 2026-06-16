@@ -11,7 +11,9 @@ profile home_assistant_security_auditor flags=(attach_disconnected,mediate_delet
   network inet stream,
   network inet6 stream,
 
+  /init rix,
   /run.sh rix,
+  /usr/bin/with-contenv rix,
   /app/** r,
   /usr/bin/python3 rix,
   /usr/lib/python*/** r,
