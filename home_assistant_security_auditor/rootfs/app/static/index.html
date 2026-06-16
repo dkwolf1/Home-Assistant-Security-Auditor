@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Assistant Security Auditor</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar">
+        <div>
+          <p class="eyebrow">Home Assistant add-on</p>
+          <h1>Security Auditor</h1>
+        </div>
+        <button id="run-scan" class="primary-button" type="button">
+          <span class="button-icon">&#8635;</span>
+          Scan opnieuw
+        </button>
+      </section>
+
+      <section class="summary-grid">
+        <article class="score-panel">
+          <div class="score-ring" aria-label="Security score">
+            <span id="score">--</span>
+            <small>/100</small>
+          </div>
+          <div>
+            <h2>Security score</h2>
+            <p id="score-copy">Wachten op scanresultaat.</p>
+          </div>
+        </article>
+        <article class="stat-panel">
+          <span id="target">Geen target</span>
+          <small>Publieke URL</small>
+        </article>
+        <article class="stat-panel">
+          <span id="generated">--</span>
+          <small>Laatst gecontroleerd</small>
+        </article>
+      </section>
+
+      <section class="toolbar">
+        <div class="segmented" role="tablist" aria-label="Filter bevindingen">
+          <button class="segment active" data-filter="all" type="button">Alles</button>
+          <button class="segment" data-filter="fail" type="button">Fouten</button>
+          <button class="segment" data-filter="warn" type="button">Waarschuwingen</button>
+          <button class="segment" data-filter="pass" type="button">Geslaagd</button>
+        </div>
+        <p id="status-line">Scan wordt voorbereid.</p>
+      </section>
+
+      <section id="findings" class="findings" aria-live="polite"></section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
