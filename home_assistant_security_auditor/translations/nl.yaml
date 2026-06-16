@@ -1,0 +1,11 @@
+configuration:
+  public_url:
+    name: Publieke URL
+    description: Publieke Home Assistant URL of hostnaam om te controleren.
+  scan_common_ports:
+    name: Controleer veelgebruikte poorten
+    description: Controleer of veelgebruikte poorten bereikbaar lijken vanuit de add-on container.
+  request_timeout_seconds:
+    name: Request timeout
+    description: Timeout in seconden voor netwerkcontroles.
+
