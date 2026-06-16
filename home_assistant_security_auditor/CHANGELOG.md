@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+- Switched to a plain Alpine runtime to avoid s6-overlay startup permission issues on `/init`.
+
 ## 0.1.3
 
 - Removed the custom AppArmor profile so Supervisor can use the default Home Assistant confinement profile.
