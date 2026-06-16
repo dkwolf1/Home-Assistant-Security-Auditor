@@ -2,13 +2,10 @@ name: Home Assistant Security Auditor
 version: "0.1.0"
 slug: home_assistant_security_auditor
 description: Audit external access security for Home Assistant setups.
-url: https://github.com/local/home-assistant-security-auditor/tree/main/home_assistant_security_auditor
+url: https://github.com/dkwolf1/Home-Assistant-Security-Auditor/tree/main/home_assistant_security_auditor
 arch:
   - aarch64
   - amd64
-  - armhf
-  - armv7
-  - i386
 startup: services
 boot: manual
 init: false
